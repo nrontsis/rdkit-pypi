@@ -147,7 +147,7 @@ freetype/2.13.2
 
         # Clone RDKit from git at rdkit_tag
         check_call(
-            ["git", "clone", "-b", "patch", "https://github.com/nrontsis/rdkit"]
+            ["git", "clone", "-b", "patches", "https://github.com/nrontsis/rdkit"]
         )
 
         # Location of license file
