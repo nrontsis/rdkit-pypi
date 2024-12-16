@@ -12,7 +12,7 @@ from setuptools import Extension, find_packages, setup
 from setuptools.command.build_ext import build_ext as build_ext_orig
 
 # RDKit version to build (tag from github repository)
-rdkit_tag = "Release_2024_03_6"
+rdkit_tag = "Release_2024_09_3_post1"
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -482,7 +482,7 @@ freetype/2.13.2
 
 
 setup(
-    name="rdkit",
+    name="rdkit-iso",
     version=rdkit_tag.replace("Release_", "").replace("_", "."),
     description="A collection of chemoinformatics and machine-learning software written in C++ and Python",
     author="Christopher Kuenneth",
