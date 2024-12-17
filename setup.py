@@ -12,7 +12,7 @@ from setuptools import Extension, find_packages, setup
 from setuptools.command.build_ext import build_ext as build_ext_orig
 
 # RDKit version to build (tag from github repository)
-rdkit_tag = "Release_2024_09_3_post1"
+rdkit_tag = "Release_2024_03_5_post1"
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -147,7 +147,7 @@ freetype/2.13.2
 
         # Clone RDKit from git at rdkit_tag
         check_call(
-            ["git", "clone", "-b", "Release_2024_09_3_post1", "https://github.com/nrontsis/rdkit"]
+            ["git", "clone", "-b",  rdkit_tag, "https://github.com/nrontsis/rdkit"]
         )
 
         # Location of license file
