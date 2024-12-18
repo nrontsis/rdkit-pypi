@@ -1,0 +1,15 @@
+[requires]
+boost/1.85.0@chris/mod_boost
+
+
+[generators]
+deploy
+CMakeDeps
+CMakeToolchain
+VirtualRunEnv
+
+[options]
+boost:shared=True
+boost:without_python=False
+boost:without_python_lib=True
+boost:without_stacktrace=False
