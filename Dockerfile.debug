@@ -1,7 +1,7 @@
 # This dockerfile is used to debug cibuildwheel in an interactive manner
 # To increase interactivity, delete the last 3 lines, launch the repo as a volume, and run the build interactively.
-ARG PYTHON_VERSION=cp311
 FROM quay.io/pypa/manylinux_2_28_x86_64:latest
+ARG PYTHON_VERSION=cp311
 WORKDIR /project
 RUN yum update -y && yum install freetype-devel libpng-devel pixman-devel zlib-devel eigen3-devel cairo-devel -y
 ENV ORIGINAL_PATH=$PATH
